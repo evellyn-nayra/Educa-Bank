@@ -1,41 +1,105 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
-.header{
-background-color: #1a90a5;
-display: flex;
-padding: 60px;
-justify-content: end;
-flex-wrap: wrap;
+.menu-header{
+background-color: rgb(78, 135, 168);
+display: flex; /*faz com que o menu fique de uma lado da pag e os demais conteudos do lado oposto*/
+padding: 60px; /**/
+justify-content: end; /*leva todo o menu para o final do header*/
+flex-wrap: wrap; /*permite que ocorro a quebra de linhas para adequação do conteudo inserido na pagina web*/
 align-items: center;
 }
 
-.header a{
-    text-decoration: none;
-    justify-content: space-between;
+.menu-header a{
+    text-decoration: none; /*retira a decoração que veio junto com a lista inserida na taq a*/
+    justify-content: space-between; /*deixa os itens da lista lado a lado mas não colados um o outro*/
     color: aliceblue;
     font-size: 13px;
 }
 
-.header li{
+.menu-header li{
     display: flex;
     margin-left: 50px;
+    list-style: none; /*retirando as decorações da lista que foi inserida na tag a*/
+}
+
+.menu-header a :hover{
+    color: blue; /*dentro no menu hover, estou definindo a cor que sera exibida ao passar o mouse*/
+    transition: 0.8s; /*definindo o tempo que vai levar para ser exibida a cor ao passar o mouse*/
 }
 
 .options{
     display: flex;
 }
 
-.btn-abrir-conta{
-    padding: 10px;
-    background-color: aliceblue;
-    border-color: #1a90a5;
-    border-radius: 20px;
-    font-size: 10px;
+#sessao1{
+    /* margin-left: 50px; */
+    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%); /* uma cor gradiente */
+    padding: 150px;
+}
+#sessao1 > button:hover{
+color: aliceblue;
+background-color: #1a90a5;
+transition: 0.8s;
+border-color: aliceblue;
 }
 
-h1{
+#sessao1 button{
+    padding: 15px;
+    background-color: aliceblue;
+    border-color: #1a90a5;
+    border-radius: 40px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: #1a90a5;
+}
+
+#sessao1 h2{
     margin-top: 50px;
     align-items: center;
+    font-size: 50px;
+}
+
+#sessao1 p{
+    font-size: 35px;
+}
+
+#app{
+    display: flex;
+    padding: 100px;
+    align-items: center;
+}
+
+#app > div img{
+    width: 420px;
+    height: 420px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#app > div > p{
+    font-size: 40px;
+}
+
+#app > div button{
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    border-color: #1a90a5;
+    color: #1a90a5;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+#app > div button:hover{
+    color: aliceblue;
+    background-color: #1a90a5;
+    transition: 0.8s;
+    border-color: aliceblue;
+}
+
+#container{
+    padding: 60px;
 }
