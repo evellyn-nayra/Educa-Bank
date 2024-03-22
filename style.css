@@ -36,66 +36,71 @@ align-items: center;
 
 #sessao1{
     /* margin-left: 50px; */
-    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%); /* uma cor gradiente */
-    padding: 150px;
+    /* https://cssgradient.io/ - site para criar uma cor gradiente */
+    padding: 15rem;
+    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%);
 }
+
+#sessao1 h2{
+    align-items: center;
+    font-size: 3em; /*48px*/
+    color: rgba(0, 0, 0, 0.759);
+}
+
+#sessao1 p{
+    font-size: 2.3em;
+    margin: 20px 0;
+}
+
 #sessao1 > button:hover{
 color: aliceblue;
-background-color: #1a90a5;
+background-color: rgb(19, 153, 108);
 transition: 0.8s;
 border-color: aliceblue;
 }
 
 #sessao1 button{
-    padding: 15px;
-    background-color: aliceblue;
-    border-color: #1a90a5;
+    padding: 22px;
+    border-color: rgb(19, 153, 108);
     border-radius: 40px;
     font-size: 17px;
-    margin-top: 10px;
-    color: #1a90a5;
-}
-
-#sessao1 h2{
-    margin-top: 50px;
-    align-items: center;
-    font-size: 50px;
-}
-
-#sessao1 p{
-    font-size: 35px;
+    margin-bottom: 20px;
+    color: rgb(19, 153, 108);
+    width: 20em;
 }
 
 #app{
     display: flex;
     padding: 100px;
     align-items: center;
+    justify-content: space-around;
 }
 
 #app > div img{
-    width: 420px;
-    height: 420px;
-    margin-top: 50px;
+    width: 25rem;
+    height: 25rem;
+    margin-top: -70px;
     margin-left: 50px;
 }
 
 #app > div > p{
-    font-size: 40px;
+    font-size: 2.8em;
+    margin: 20px 0;
 }
 
 #app > div button{
-    padding: 15px;
-    background-color: aliceblue;
+    padding: 22px;
+    border-color: rgb(19, 153, 108);
     border-radius: 40px;
-    border-color: #1a90a5;
-    color: #1a90a5;
     font-size: 17px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    color: rgb(19, 153, 108);
+    width: 20em;
 }
 
 #app > div button:hover{
     color: aliceblue;
-    background-color: #1a90a5;
+    background-color: rgb(19, 153, 108);
     transition: 0.8s;
     border-color: aliceblue;
 }
