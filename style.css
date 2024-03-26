@@ -72,15 +72,17 @@ border-color: aliceblue;
 #app{
     display: flex;
     padding: 100px;
+    background-color: aliceblue;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 #app > div img{
     width: 25rem;
     height: 25rem;
     margin-top: -70px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 #app > div > p{
@@ -96,6 +98,7 @@ border-color: aliceblue;
     margin-bottom: 20px;
     color: rgb(19, 153, 108);
     width: 20em;
+    background-color: aliceblue;
 }
 
 #app > div button:hover{
@@ -106,5 +109,67 @@ border-color: aliceblue;
 }
 
 #container{
-    padding: 60px;
+    padding: 15rem;
+    background-color: aliceblue;
+    
+
 }
+
+#container h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(7, 7, 99, 0.697);
+    margin-top: -20rem;
+    margin-bottom: 2rem;
+}
+
+#container p{
+    font-size: 1.8rem;
+    color: rgb(34, 34, 74);
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+#container a{
+    text-decoration: none;
+}
+
+#container button{
+    padding: 22px;
+    border-color: rgb(48, 19, 153);
+    border-radius: 40px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: blue;
+    width: 15em;
+    background-color: aliceblue;
+}
+
+#container > button:hover{
+    background-color: rgb(50, 50, 226);
+    color:aliceblue;
+    transition: 0.8s;
+}
+
+#container button a:hover{
+    color: aliceblue;
+    transition: 0.8s;
+}
+
+.line{
+    width: 70%;
+    margin: 50px auto; /* o primeiro valor refere-se as margens superior e inferior, o segundo valor refere-se as margens da lateral*/
+}
+
+#container img{
+    width: 45rem;
+    margin-left: 280px;
+}
+
+#container-cofre{
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
+}
+
+
+
+
