@@ -28,6 +28,7 @@ align-items: center;
 .menu-header a :hover{
     color: blue; /*dentro no menu hover, estou definindo a cor que sera exibida ao passar o mouse*/
     transition: 0.8s; /*definindo o tempo que vai levar para ser exibida a cor ao passar o mouse*/
+    cursor: pointer;
 }
 
 .options{
@@ -52,11 +53,12 @@ align-items: center;
     margin: 20px 0;
 }
 
-#sessao1 > button:hover{
+#sessao1 > a button:hover{
 color: aliceblue;
 background-color: rgb(19, 153, 108);
 transition: 0.8s;
 border-color: aliceblue;
+cursor: pointer;
 }
 
 #sessao1 button{
@@ -106,6 +108,7 @@ border-color: aliceblue;
     background-color: rgb(19, 153, 108);
     transition: 0.8s;
     border-color: aliceblue;
+    cursor: pointer;
 }
 
 #container{
@@ -145,15 +148,11 @@ border-color: aliceblue;
     background-color: aliceblue;
 }
 
-#container > button:hover{
+#container > a button:hover{
     background-color: rgb(50, 50, 226);
     color:aliceblue;
     transition: 0.8s;
-}
-
-#container button a:hover{
-    color: aliceblue;
-    transition: 0.8s;
+    cursor: pointer;
 }
 
 .line{
@@ -168,8 +167,71 @@ border-color: aliceblue;
 
 #container-cofre{
     background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
+    background-position: center;
+    background-attachment: fixed; /*faz com que a imagem fique fixa, ao rolar a tela para baixo a imagem permanece no fundo*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15rem;
+
 }
 
+#container-cofre img{
+    width: 20rem;
+    height: auto;
+    margin-top: 9rem;
+}
+
+#container-cofre h2{
+    color: aliceblue;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 5rem;
+}
+
+#container-cofre p{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    margin-left: 5rem;
+}
+
+footer{
+    background-color: rgba(2, 2, 2, 0.966);
+    color: rgba(58, 58, 58, 0.759);
+    padding: 3rem;
+    text-align: center;
+}
+
+footer div{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    list-style: none;
+    margin-top: 2rem;
+    
+}
+
+footer img{
+    width: 20rem;
+    align-items: center;
+}
+
+footer div a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer div a:hover{
+    color: rgb(65, 2, 90);
+    transition: 0.8s;
+}
 
 
 
